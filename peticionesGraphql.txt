@@ -1,0 +1,38 @@
+mutation{
+  addAlumno(nombre:"Ame",calificacion:10){
+    id
+    nombre
+    calificacion
+  }
+}
+
+
+{
+  alumnos{
+    id
+    nombre
+    calificacion
+  }
+}
+
+{
+  alumno(id:2){
+    id
+    nombre
+    calificacion
+  }
+}
+
+mutation{
+  updateAlumno(id:1,nombre:"Ameyalli",calificacion:10){
+    id
+    nombre
+    calificacion
+  }
+}
+
+mutation{
+  deleteAlumno(id:1){
+    id
+  }
+}
